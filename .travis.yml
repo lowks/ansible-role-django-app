@@ -23,7 +23,7 @@ install:
 
 script:
   # Install ansible packages
-  - ansible-galaxy install -r tests/requirements.yml
+  - ansible-galaxy install repleo.nginx repleo.postgresql
 
   # Basic role syntax check
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
